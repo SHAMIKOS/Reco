@@ -5,6 +5,8 @@ import vercelStatic from '@astrojs/vercel';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 const options = {
 	// Specify the theme to use or a custom theme json, in our case
 	// it will be a moonlight-II theme from
@@ -36,8 +38,9 @@ export default defineConfig({
 	markdown: {
 		syntaxHighlight: false,
 		// Disable syntax built-in syntax hightlighting from astro
-		rehypePlugins: [[rehypePrettyCode, options]],
-		remarkPlugins: [remarkReadingTime]
+		rehypePlugins: [rehypeKatex],
+		remarkPlugins: [remarkMath],
+		katex:true
 	},
 
 	integrations: [react(), sitemap()],
@@ -49,6 +52,10 @@ export default defineConfig({
 		}
 	}),
 	vite: {
-		plugins: [tailwindcss()]
+		plugins: [
+			tailwindcss(),
+
+		
+		]
 	}
 });

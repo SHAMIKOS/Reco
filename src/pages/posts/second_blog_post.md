@@ -9,6 +9,7 @@ image:
   src:
   alt:
 tags: ["tag5", "tag1", "tag2", "tag3", "tag4"]
+
 ---
 
 This is a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
@@ -16,6 +17,10 @@ This is a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Te
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+
+$$
+E=m \cdot c^2
+$$
 
 ## Headings
 
